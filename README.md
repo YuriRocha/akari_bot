@@ -1,7 +1,7 @@
 # Akari
 
 
-![alt text](http://vignette2.wikia.nocookie.net/sangatsu-no-lion/images/8/85/Akari_Kawamoto_pic.jpg/revision/latest?cb=20160906034714 "Akari logo")
+![alt text](https://s4.anilist.co/file/anilistcdn/character/large/24311-WY1Q26PwwJeB.png "Akari logo")
 
 Inline Telegram bot for searching information about animes and mangas.
 
