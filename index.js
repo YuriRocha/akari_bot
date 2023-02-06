@@ -1,11 +1,17 @@
 process.env["NTBA_FIX_319"] = 1;
 const fetch = require('node-fetch');
-//const telegram_key = require('./config');
+const telegram_key = require('./config');
 require('dotenv').config();
+
+var TelegramBot = require('node-telegram-bot-api')
+var telegram = new TelegramBot(telegram_key.MY_KEY, {polling: true});
+//443979879:AAFHGx7h3DuKnP2QM1XKOKsIqtcp9OiYt9Y
+/* CONFIGURAÇÃO DO HEROKU
 
 var TelegramBot = require('node-telegram-bot-api'),
 telegram = new TelegramBot(process.env.MY_KEY || 443, {webHook: {port: process.env.PORT, host : '0.0.0.0'} });
-telegram.setWebHook('https://akariii-bot.herokuapp.com/' + ':443/bot' + process.env.MY_KEY);
+//telegram.setWebHook('https://akariii-bot.herokuapp.com/' + ':443/bot' + process.env.MY_KEY);
+*/
 
 //INLINE QUERY
 telegram.on("inline_query", (iquery) => {
